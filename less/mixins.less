@@ -1,13 +1,13 @@
 // Mixins in here
 
-.custom-btn (@font-color:white; @background:teal; @align-items: center) {
+.custom-btn (@font-color:white; @background:teal; @align-items: center; @width: 200px) {
 color: @font-color;
 background: @background;
 padding: 10px 5px;
 align-items: @align-items;
 // width: 50px;
 height: auto;
-width: 200px;
+width: @width;
 font-size: 20px;
 align-content: center;
 border-radius: 15%;
@@ -26,6 +26,10 @@ border-radius: 15%;
 .btn {
     .center();
     .custom-btn ();
+    @media@mobile {
+        .center();
+        .custom-btn (@width:300px);
+      }
 }
 
 // }

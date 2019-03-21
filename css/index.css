@@ -12,6 +12,22 @@
   align-content: center;
   border-radius: 15%;
 }
+@media (max-width:500px) {
+  .btn {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    color: white;
+    background: teal;
+    padding: 10px 5px;
+    align-items: center;
+    height: auto;
+    width: 300px;
+    font-size: 20px;
+    align-content: center;
+    border-radius: 15%;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -187,6 +203,14 @@ img {
   display: flex;
   width: 100%;
 }
+@media (max-width:500px) {
+  .top-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+  }
+}
 .top-header .fun-bus {
   display: flex;
   margin-right: 3%;
@@ -195,9 +219,21 @@ img {
   align-items: center;
   width: 30px;
 }
+@media (max-width:500px) {
+  .top-header .fun-bus {
+    margin-right: 30%;
+    margin-left: 30%;
+  }
+}
 .top-header .nav-links {
   margin-left: 50%;
   width: 100%;
+}
+@media (max-width:500px) {
+  .top-header .nav-links {
+    width: 80%;
+    margin-left: 10%;
+  }
 }
 .top-header .nav-links .header-links {
   text-decoration: none;
@@ -222,20 +258,49 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width:500px) {
+  .home .content-section {
+    width: 100%;
+    flex-direction: column;
+  }
+}
 .home .content-section .bus {
   margin-bottom: 3%;
+}
+@media (max-width:500px) {
+  .home .content-section .bus {
+    width: 80%;
+    margin-left: 5%;
+  }
 }
 .home .content-section .header {
   border-bottom: dashed black 1px;
   margin-bottom: 3%;
 }
+@media (max-width:500px) {
+  .home .content-section .header {
+    width: 80%;
+    margin-left: 5%;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width:500px) {
+  .home .content-section .text-content {
+    width: 80%;
+    margin-left: 8%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width:500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -243,6 +308,13 @@ img {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width:500px) {
+  .home .inverse-content {
+    width: 80%;
+    flex-direction: column-reverse;
+    margin-left: 10%;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -265,7 +337,18 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width:500px) {
+  .home .content-pick {
+    flex-direction: column;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width:500px) {
+  .home .content-pick .destination {
+    width: 80%;
+    margin-left: 20%;
+  }
 }
