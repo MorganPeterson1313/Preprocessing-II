@@ -1,1 +1,31 @@
 // Mixins in here
+
+.custom-btn (@font-color:white; @background:teal; @align-items: center) {
+color: @font-color;
+background: @background;
+padding: 10px 5px;
+align-items: @align-items;
+// width: 50px;
+height: auto;
+width: 200px;
+font-size: 20px;
+align-content: center;
+border-radius: 15%;
+
+}
+
+
+.center(@justify-items: center; @align-items: center) {
+    display: flex;
+    justify-content: center;
+    align-content: @align-items;
+    justify-items: @justify-items;
+    align-items: center;
+}
+// .destination{
+.btn {
+    .center();
+    .custom-btn ();
+}
+
+// }
